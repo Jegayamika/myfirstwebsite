@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            background-color: black;
+            color:#63e963;
+        }
+        .container-fluid{
+            width:95%;
+            margin: 0 auto;
+        }
+        .container{
+            width:85%;
+            margin: 0 auto;
+        }
+        .row{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .col{
+            width:50%;
+        }
+            
+            a{
+                text-decoration: none;
+            }
+            ul{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+              
+            }
+            ul li{
+                list-style: none;
+                
+               
+            }
+            #banner{
+                width:85%;
+            margin: 0 auto;
+            }
+            .banner{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+              height: 100vh;
+              
+            }
+            .banner p{
+                text-transform: uppercase;
+                text-align: center;
+            }
+            .about-heading{
+                text-align: center;
+            }
+            .about-row{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+        .about-col{
+            width:45%;
+        }
+        .about-img img{
+            width:100%;
+            border-radius: 50%;
+            height: auto;
+        }
+        li{ /*style the li tag*/
+	list-style-type: none;
+	font-family: sans-serif;
+}
+
+
+
+.skills{ /*style the text*/
+	
+	margin: 60px auto;
+	color: #fff;
+}
+
+.skills li{ /*set margin of li*/
+	margin: 20px 0;
+}
+
+.bar{ /*style the bar*/
+	background-color: #353b48;
+	display: block;
+    width:50%;
+	height: 15px;
+	border: 1px solid rgba(0,0,0,0.3); 
+	border-radius: 5px;
+    /* background: 
+    /* radial-gradient(closest-side, white 79%, transparent 80% 100%), */
+   /* linear-gradient(#63e963 75%, #63e963  0);     */
+	overflow: hidden;
+	box-shadow: 0 0 10px #63e963;
+    color:#fff;
+}
+
+.bar span{ /*style the span tag*/
+	height: 15px;
+	float: left;
+	background-color:#63e963 ; 
+}
+
+.html{ /*set skills and animation of html*/
+	width: 85%;
+	animation: html 2s;
+}
+
+.css{ /*set skills and animation of css*/
+	width: 90%;
+	animation: css 2s;
+}
+
+.javascript{ /*set skills and animation of javascript*/
+	width: 50%;
+	animation:javascript 2s;
+}
+
+.react{ /*set skills and animation of jquery*/
+	width: 30%;
+	animation: react 2s;
+}
+
+@keyframes html{ /*animate html skills*/
+	0%{
+		width: 0%;
+	}
+
+	100%{
+		width: 85%;
+	}
+}
+
+@keyframes css{ /*animate css skills*/
+	0%{
+		width: 0%;
+	}
+
+	100%{
+		width: 90%;
+	}
+}
+
+@keyframes javascript{ /*animate javascript skills*/
+	0%{
+		width: 0%;
+	}
+
+	100%{
+		width: 50%;
+	}
+}
+
+@keyframes react{ /*animate jquery skills*/
+	0%{
+		width: 0%;
+	}
+
+	100%{
+		width: 30%;
+	}
+}
+      
+
+    </style>
+</head>
+<body>
+    <section class="navbar">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col">
+                    <p>jega</p>
+                </div>
+                <div class="col">
+                    <ul>
+                        <li> <a href="#home">Home</a></li>
+                        <li> <a href="portfolio.html#about">About</a></li>
+                        <li><a href="#">Skills</a></li>
+                        <li><a href="#">Projects</a></li>
+                        <li> <a href="#">Education</a></li>
+                        <li> <a href="#">Contact</a></li>
+                    </ul>
+                   
+
+                </div>
+            </div>
+        </div>
+       
+    </section>
+    <section id="banner">
+        <div class="banner">
+         
+            <p>Front end developer</p>
+        </div>
+    </section>
+    <section id="about">
+        <div class="about-heading">
+            <h2>About me</h2>
+        </div>
+        <div class="container">
+            <div class="about-row">
+                <div class="about-col">
+                    <div class="about-img">
+                        <img src="jega.jpeg" alt="Not found">
+
+                    </div>
+                </div>
+                <div class="about-col">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores placeat impedit consequatur nisi, exercitationem, aliquid magni molestias pariatur cum neque, sit ex accusantium molestiae iure quidem adipisci? Atque, magnam odio?</p>
+                </div>
+            </div>
+
+           
+        </div>
+    </section>
+    <section id="skills">
+        <div class="container">
+
+      
+        <div class="skills">  <!-- create a div -->
+            <h1>My Skills</h1> <!-- heading -->
+            <li>
+                <h3>HTML</h3><span class="bar"><span class="html"></span></span> <!-- skill bar 1 -->
+                
+            </li>
+        
+            <li>
+                <h3>CSS</h3><span class="bar"><span class="css"></span></span><!-- skill bar 2 -->
+            </li>
+        
+            <li>
+                <h3>JAVASCRIPT</h3><span class="bar"><span class="javascript"></span></span><!-- skill bar 3 -->
+            </li>
+        
+            <li>
+                <h3>React</h3><span class="bar"><span class="react"></span></span><!-- skill bar 4 -->
+            </li>
+        </div>
+    </div>
+    </section>
+    <section class="projects">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+
+                </div>
+            </div>
+        </div>
+    </section>
+    
+</body>
+</html>
